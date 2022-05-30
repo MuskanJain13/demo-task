@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+}
+
+.container{
+    /* If border is 1 or greater then the vertical scrollbar is appearing for 100vh (viewport height) */
+    border: 0px solid red;
+    position: relative;
+    color: white;
+    margin: 0px;
+    height: 100%;
+}
+
+#inside-box {
+    border: 1px solid black;
+    color: white;
+    background-color: grey;
+    width: 35%;
+    min-width: 300px;
+    border-radius: 20px;
+    margin: 0;
+    /* Code for placing div vertically center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: auto;
+    /* Center vertically and horizontally */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#advice-title{
+    text-align: center;
+    margin-top: 10%;
+}
+
+#advice-body{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 2rem;
+}
+
+#dice-shape{
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -4vh;
+}
