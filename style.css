@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: black;
+    background-color: hsl(218, 23%, 16%);
     height: 100vh;
 }
 
@@ -14,12 +14,12 @@ body{
 }
 
 #inside-box {
-    border: 1px solid black;
+    border: 0px solid black;
     color: white;
-    background-color: grey;
+    background-color: hsl(217, 19%, 24%);
     width: 35%;
     min-width: 300px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin: 0;
     /* Code for placing div vertically center */
     position: absolute;
@@ -28,32 +28,52 @@ body{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     height: auto;
+
     /* Center vertically and horizontally */
-    display: grid;
+    /* display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+
 }
 
 #advice-title{
     text-align: center;
     margin-top: 10%;
+    color: hsl(150, 100%, 66%);
+    font-size: 12px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
 }
 
 #advice-body{
+    border: 0px solid white;
+    color: hsl(193, 38%, 86%);
     text-align: center;
     margin-top: 5%;
-    font-size: 2rem;
+    font-size: 28px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #dice-shape{
     border-radius: 50%;
-    background-color: green;
+    background-color: hsl(150, 100%, 66%);
     position: absolute;
     height: 60px;
     width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     bottom: -4vh;
     cursor: pointer;
+}
+
+#dice-shape:hover{
+    box-shadow: 0px 0px 30px 2px hsl(150, 100%, 66%);
 }

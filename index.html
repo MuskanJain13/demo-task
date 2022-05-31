@@ -4,19 +4,24 @@
         <meta charset="utf-8">
         <title>Demo Task</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container" >
             <div id="inside-box">
                 <div id="advice-title">
-                    ADVICE #117
+                    ADVICE #168
                 </div>
                 <div id="advice-body">
-                    "Text text text text"
+                    “Do a bit more for your friends.”
                 </div>
-                <img src="assets/pattern-divider-desktop.svg" style="margin: 10% 0;" alt="divider">
-                <div id="dice-shape" onclick="display()">
-                    <img src="assets/icon-dice.svg" alt="dice">
+                <img src="assets/pattern-divider-desktop.svg" style="margin: 8% auto 12% auto; display: block;" alt="divider">
+                <div class="center">
+                    <div id="dice-shape" class="center" onclick="display()">
+                        <img src="assets/icon-dice.svg" alt="dice">
+                    </div>
                 </div>
             </div>
         </div>
@@ -35,8 +40,10 @@
                 }
                 console.log(data.slip.advice);
                 var advice = data.slip.advice;
+                var id = data.slip.id;
                 // Changing the advice text in HTML div
-                document.getElementById('advice-body').innerHTML = advice;
+                document.getElementById('advice-body').innerHTML = '&ldquo;'+advice+'&rdquo;';
+                document.getElementById('advice-title').innerHTML = 'ADVICE #'+id;
             }
 
             function display()
