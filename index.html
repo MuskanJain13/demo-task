@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Demo Task</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
                 <div id="advice-body">
                     “Do a bit more for your friends.”
                 </div>
-                <img src="assets/pattern-divider-desktop.svg" style="margin: 8% auto 12% auto; display: block;" alt="divider">
+                <img id="divider" src="assets/pattern-divider-desktop.svg" style="margin: 8% auto 70px auto; width: 80%; display: block;" alt="divider">
                 <div class="center">
                     <div id="dice-shape" class="center" onclick="display()">
                         <img src="assets/icon-dice.svg" alt="dice">
@@ -51,6 +52,22 @@
                 // Calling the async function
                 get_api(API_url);
             }
+
+            function myFunction(x) {
+              if (x.matches) { // If media query matches
+                  document.getElementById("divider").src = "assets/pattern-divider-mobile.svg";
+                  // document.getElementById("divider").style.margin = "8% auto 100px auto";
+                  // document.getElementById("divider").style.width = "80%";
+                  // document.getElementById("divider").style.display = "block";
+
+              } else {
+                  document.getElementById("divider").src = "assets/pattern-divider-desktop.svg";
+              }
+            }
+
+            var x = window.matchMedia("(max-width: 375px)")
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes
 
         </script>
     </body>
