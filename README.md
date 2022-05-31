@@ -23,9 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot-1 Demo Task.png)
-![](./Screenshot-2 Demo Task Hover.png)
-![](./Screenshot-3 Demo Task Mobile.png)
+![](https://github.com/MuskanJain13/demo-task/blob/main/Screenshot-1%20Demo%20Task.png)
+![](https://github.com/MuskanJain13/demo-task/blob/main/Screenshot-2%20Demo%20Task%20Hover.png)
+![](https://github.com/MuskanJain13/demo-task/blob/main/Screenshot-3%20Demo%20Task%20Mobile.png)
 
 ### Links
 
